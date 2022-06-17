@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-US" class="jkit-nav-menu-loaded">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<title>C4Self | Password Strength Evaluation</title>
+
+		<link rel="stylesheet" href="../static/css/scrollbar.css">
+		<link rel="stylesheet" id="jkit-elements-main-css" href="/static/assets/main.css" type="text/css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="/static/assets/style.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="contact-form-7-css" href="/static/assets/styles.css" type="text/css" media="all">
+		<link rel="stylesheet" id="template-kit-export-css" href="/static/assets/template-kit-export-public.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="hfe-style-css" href="/static/assets/header-footer-elementor.css" type="text/css" media="all">
+		
+		<!--<link rel="stylesheet" id="elementor-animations-css" href="/static/assets/animations.min.css" type="text/css" media="all">-->
+		<link rel="stylesheet" id="elementor-frontend-css" href="/static/assets/frontend.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-15-css" href="/static/assets/post-15.css" type="text/css" media="all">
+		<link rel="stylesheet" id="typing-effect-css" href="/static/assets/typing-effect.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="metform-css-formpicker-control-editor-css" href="/static/assets/form-picker-editor.css" type="text/css" media="all">
+		<link rel="stylesheet" id="jet-sticky-frontend-css" href="/static/assets/jet-sticky-frontend.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementskit-css-widgetarea-control-editor-css" href="/static/assets/widgetarea-editor.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-global-css" href="/static/assets/global.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-13-css" href="/static/assets/post-13.css" type="text/css" media="all">
+		<link rel="stylesheet" id="hfe-widgets-style-css" href="/static/assets/frontend.css" type="text/css" media="all">
+		<link rel="stylesheet" id="font-awesome-5-all-css" href="/static/assets/all.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="font-awesome-4-shim-css" href="/static/assets/v4-shims.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-449-css" href="/static/assets/post-449.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-post-463-css" href="/static/assets/post-463.css" type="text/css" media="all">
+		<link rel="stylesheet" id="metform-ui-css" href="/static/assets/metform-ui.css" type="text/css" media="all">
+		<link rel="stylesheet" id="metform-style-css" href="/static/assets/style.css" type="text/css" media="all">
+		<link rel="stylesheet" id="hello-elementor-css" href="/static/assets/style.min(1).css" type="text/css" media="all">
+		<link rel="stylesheet" id="hello-elementor-theme-style-css" href="/static/assets/theme.min.css" type="text/css" media="all">
+		
+		<link rel="stylesheet" id="ekit-widget-styles-css" href="/static/assets/widget-styles.css" type="text/css" media="all">
+		<link rel="stylesheet" id="ekit-responsive-css" href="/static/assets/responsive.css" type="text/css" media="all">
+		<link rel="stylesheet" id="google-fonts-1-css" href="/static/assets/css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-icons-shared-0-css" href="/static/assets/fontawesome.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="/static/assets/solid.min.css" type="text/css" media="all">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        
+		<link rel="stylesheet" id="elementor-icons-css" href="/static/assets/elementor-icons.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-icons-jkiticon-css" href="/static/assets/jkiticon.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="/static/assets/brands.min.css" type="text/css" media="all">
+		<link rel="stylesheet" id="elementor-icons-ekiticons-css" href="/static/assets/ekiticons.css" type="text/css" media="all">
+		
+		<script type="text/javascript" src="/static/assets/jquery.min.js" id="jquery-core-js"></script>
+		<script type="text/javascript" src="/static/assets/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+		<script type="text/javascript" src="/static/assets/template-kit-export-public.min.js" id="template-kit-export-js"></script>
+		<script type="text/javascript" src="/static/assets/v4-shims.min.js" id="font-awesome-4-shim-js"></script>
+		
+		<style id="jeg_dynamic_css" type="text/css" data-type="jeg_custom-css"></style>
+        
+        <link href="/static/assets/database.png" rel="icon">
+        
+        <meta name="description" content="C4Self is the one-stop solution for password evaluation and strength analysis.">
+        <meta name="keywords" content="vitask,moodle,captcha,login,chennai,vit,vellore institute of technology,vtop,ffcs,vitask web,vitask chennai,technovit,vibrance,technovit chennai,vibrance chennai,owasp,owaspvit,c4self,password strength evaluation,C4Self evaluation">
+        <meta name="author" content="C4Self Team, wilson, rishank">
+	</head>
+	<body class="home page-template page-template-elementor_header_footer page page-id-13 jkit-color-scheme ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor elementor-default elementor-template-full-width elementor-kit-15 elementor-page elementor-page-13 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
+		<div id="page" class="hfeed site">
+			
+			<div data-elementor-type="wp-page" data-elementor-id="13" class="elementor elementor-13" data-elementor-settings="[]">
+				<div class="elementor-section-wrap">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-451c9352 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-id="451c9352" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;mountains&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-background-overlay"></div>
+						<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+								<path class="elementor-shape-fill" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
+								<path class="elementor-shape-fill" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
+								<path class="elementor-shape-fill" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
+							</svg>
+						</div>
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6ff0c442" data-id="6ff0c442" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-205cc729 animated-slow elementor-widget elementor-widget-image animated fadeInRight" data-id="205cc729" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="image.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-image">
+												<img width="1296" height="934" src="/static/assets/securityy.png" class="elementor-animation-hang attachment-full size-full" alt="" loading="lazy" sizes="(max-width: 1296px) 100vw, 1296px">											
+											</div>
+										</div>
+									</div>
+									<section class="elementor-section elementor-inner-section elementor-element elementor-element-2b0264ea elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2b0264ea" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+										<div class="elementor-container elementor-column-gap-no">
+											
+											<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-28645ff1 elementor-hidden-tablet elementor-hidden-phone" data-id="28645ff1" data-element_type="column">
+												<div class="elementor-widget-wrap">
+												</div>
+											</div>
+
+											<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a647fe3" data-id="a647fe3" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-bd30d58 elementor-widget elementor-widget-jkit_animated_text" data-id="bd30d58" data-element_type="widget" data-widget_type="jkit_animated_text.default">
+														<div class="elementor-widget-container">
+															<div class="jeg-elementor-kit jkit-animated-text jeg_module_13_1_606e6f074737e" data-style="rotating" data-text="Security,Protection,Company" data-rotate="swirl" data-delay="2500" data-letter-speed="100">
+																<p class="animated-text"><span class="normal-text style-color">C4</span><span class="dynamic-wrapper style-color cursor-blink"><span class="dynamic-text show-text"><span class="dynamic-text-letter show-letter">S</span><span class="dynamic-text-letter show-letter">e</span><span class="dynamic-text-letter show-letter">l</span><span class="dynamic-text-letter show-letter">f</span></p>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-10f4bbb6 elementor-widget elementor-widget-text-editor" data-id="10f4bbb6" data-element_type="widget" data-widget_type="text-editor.default">
+														<div class="elementor-element elementor-element-7c39c21 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-elementskit-mail-chimp" data-id="7c39c21" data-element_type="widget" data-widget_type="elementskit-mail-chimp.default">
+															<div class="elementor-widget-container" style="width: 30vw;">
+																<div class="ekit-wid-con">
+																	<div class="ekit-mail-chimp">
+																		<form method="POST" action="/main/">
+																			<div class="ekit-mail-message"></div>
+																			<div class="elementskit_form_wraper elementskit_inline_form">
+																				<div class="ekit-mail-chimp-email elementskit_input_wraper elementskit_input_container">
+																					<div class="elementskit_form_group">
+																						<div class="elementskit_input_element_container ">
+																							<input type="text" name="password" class="ekit_mail_email ekit_form_control " placeholder="Enter Password" required="">
+																						</div>
+																					</div>
+																				</div>
+																				<div class="ekit_submit_input_holder elementskit_input_wraper">
+																					<button type="submit" class="ekit-mail-submit" name="ekit_mail_chimp">Check</button>
+																				</div>
+																			</div>
+																		</form>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-55881d54 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="55881d54" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-771fb520 animated-slow animated fadeInUp" data-id="771fb520" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-1b360c43 elementor-widget elementor-widget-jkit_icon_box" data-id="1b360c43" data-element_type="widget" data-widget_type="jkit_icon_box.default">
+										<div class="elementor-widget-container">
+											<div class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_13_2_606e6f074cb4d">
+												<div class="jkit-icon-box-wrapper hover-from-left">
+													<div class="icon-box icon-box-header elementor-animation-">
+														<div class="icon style-color"><img src="/static/assets/security-1.png" alt="Security Services"></div>
+													</div>
+													<div class="icon-box icon-box-body">
+														<h3 class="title">LR</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-79d91b29 elementor-widget elementor-widget-text-editor" data-id="79d91b29" data-element_type="widget" data-widget_type="text-editor.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-text-editor elementor-clearfix">Logistic Regression:<br><br>
+    
+                                            {% if (LogReg == 0) %}
+                                            <span style="border: 2px solid #f44336; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #f44336;">Weak</span>
+                                            {% endif %}
+                                            {% if (LogReg == 1) %}
+                                            <span style="border: 2px solid #ff9800; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #ff9800;">Moderate</span>
+                                            {% endif %}
+                                            {% if (LogReg == 2) %}
+                                            <span style="border: 2px solid #0EC9AC; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #0EC9AC;">Strong</span>
+                                            {% endif %}
+                                                
+                                            </div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-421193db animated-slow animated fadeInUp" data-id="421193db" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-6aea9643 elementor-widget elementor-widget-jkit_icon_box" data-id="6aea9643" data-element_type="widget" data-widget_type="jkit_icon_box.default">
+										<div class="elementor-widget-container">
+											<div class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_13_3_606e6f074e789">
+												<div class="jkit-icon-box-wrapper hover-from-left">
+													<div class="icon-box icon-box-header elementor-animation-">
+														<div class="icon style-color"><img src="/static/assets/privacy.png" alt="Data Privacy"></div>
+													</div>
+													<div class="icon-box icon-box-body">
+														<h3 class="title">NB</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-27269e59 elementor-widget elementor-widget-text-editor" data-id="27269e59" data-element_type="widget" data-widget_type="text-editor.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-text-editor elementor-clearfix">Naive Bayes:<br><br>
+                                                
+                                            {% if (NaiveBayes == 0) %}
+                                            <span style="border: 2px solid #f44336; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #f44336;">Weak</span>
+                                            {% endif %}
+                                            {% if (NaiveBayes == 1) %}
+                                            <span style="border: 2px solid #ff9800; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #ff9800;">Moderate</span>
+                                            {% endif %}
+                                            {% if (NaiveBayes == 2) %}
+                                            <span style="border: 2px solid #0EC9AC; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #0EC9AC;">Strong</span>
+                                            {% endif %}
+                                           
+                                            </div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-655c8a66 animated-slow animated fadeInUp" data-id="655c8a66" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-345de855 elementor-widget elementor-widget-jkit_icon_box" data-id="345de855" data-element_type="widget" data-widget_type="jkit_icon_box.default">
+										<div class="elementor-widget-container">
+											<div class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_13_4_606e6f0750d3c">
+												<div class="jkit-icon-box-wrapper hover-from-left">
+													<div class="icon-box icon-box-header elementor-animation-">
+														<div class="icon style-color"><img src="/static/assets/certified-industry.png" alt="Industry Certified"></div>
+													</div>
+													<div class="icon-box icon-box-body">
+														<h3 class="title">DT</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-493cbf8b elementor-widget elementor-widget-text-editor" data-id="493cbf8b" data-element_type="widget" data-widget_type="text-editor.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-text-editor elementor-clearfix">Decision Tree:<br><br>
+                                            
+                                            {% if (DecisionTree == 0) %}
+                                            <span style="border: 2px solid #f44336; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #f44336;">Weak</span>
+                                            {% endif %}
+                                            {% if (DecisionTree == 1) %}
+                                            <span style="border: 2px solid #ff9800; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #ff9800;">Moderate</span>
+                                            {% endif %}
+                                            {% if (DecisionTree == 2) %}
+                                            <span style="border: 2px solid #0EC9AC; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #0EC9AC;">Strong</span>
+                                            {% endif %}
+                                            
+                                            </div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            
+                            
+                            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-655c8a66 animated-slow animated fadeInUp" data-id="655c8a66" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-345de855 elementor-widget elementor-widget-jkit_icon_box" data-id="345de855" data-element_type="widget" data-widget_type="jkit_icon_box.default">
+										<div class="elementor-widget-container">
+											<div class="jeg-elementor-kit jkit-icon-box icon-position-left elementor-animation- jeg_module_13_4_606e6f0750d3c">
+												<div class="jkit-icon-box-wrapper hover-from-left">
+													<div class="icon-box icon-box-header elementor-animation-">
+														<div class="icon style-color"><img src="/static/assets/cloud.png" alt="Industry Certified"></div>
+													</div>
+													<div class="icon-box icon-box-body">
+														<h3 class="title">NN</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-493cbf8b elementor-widget elementor-widget-text-editor" data-id="493cbf8b" data-element_type="widget" data-widget_type="text-editor.default">
+										<div class="elementor-widget-container">
+											<div class="elementor-text-editor elementor-clearfix">Neural Network:<br><br>
+                                                
+                                            {% if (NeuralNetwork == 0) %}
+                                            <span style="border: 2px solid #f44336; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #f44336;">Weak</span>
+                                            {% endif %}
+                                            {% if (NeuralNetwork == 1) %}
+                                            <span style="border: 2px solid #ff9800; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #ff9800;">Moderate</span>
+                                            {% endif %}
+                                            {% if (NeuralNetwork == 2) %}
+                                            <span style="border: 2px solid #0EC9AC; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #0EC9AC;">Strong</span>
+                                            {% endif %}
+                                                
+                                            </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>	
+				</div>
+			</div>
+
+
+
+			<section>
+				<div class="row" style="background: #00142C; place-content: center;">
+					<div class="col-sm-4" style="border-radius: 10px;">
+					  <div class="card" style="background: #00142C; border: 0px solid white; border-radius: 10px; padding-top: 30px; padding-left: 15px; padding-right: 15px;">
+						<div class="card-body" style="background: #011936; border-radius: 10px;">
+						  <h5 class="card-title">Common Password</h5>
+						  <p class="card-text">Information regarding leaked credentials in data breaches.</p>
+						  {% if (status == True) %}
+						  <span style="border: 2px solid #f44336; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #f44336;">Breached Count: {{ count }}</span>
+						  {% endif %}
+						  {% if (status == False) %}
+						  <span style="border: 2px solid #0EC9AC; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #0EC9AC;">Not Breached</span>
+						  {% endif %}
+						</div>
+					  </div>
+					</div>
+					<div class="col-sm-4" style="border-radius: 10px;">
+					  <div class="card" style="background: #00142C; border: 0px solid white; border-radius: 10px; padding-top: 30px; padding-left: 15px; padding-right: 15px;">
+						<div class="card-body" style="background: #011936; border-radius: 10px;">
+						  <h5 class="card-title">Password Score</h5>
+						  <p class="card-text">Information regarding password strength score.</p>
+						  {% if (score < 40) %}
+						  <span style="border: 2px solid #f44336; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #f44336;">Weak: {{ score }}</span>
+						  {% endif %}
+						  {% if (score >=40 and score <=60) %}
+						  <span style="border: 2px solid #ff9800; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #ff9800;">Moderate: {{ score }}</span>
+						  {% endif %}
+						  {% if (score > 60) %}
+						  <span style="border: 2px solid #0EC9AC; border-radius: 5px; padding: 5px; text-decoration: none; color: white; background: #0EC9AC;">Strong: {{ score }}</span>
+						  {% endif %}
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</section>
+
+
+
+			<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
+				<div class="footer-width-fixer">
+					<div data-elementor-type="wp-post" data-elementor-id="463" class="elementor elementor-463" data-elementor-settings="[]">
+						<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-e91e7d8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e91e7d8" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6157a44" data-id="6157a44" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<section class="elementor-section elementor-inner-section elementor-element elementor-element-1dc36d2 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1dc36d2" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+												<div class="elementor-container elementor-column-gap-no">
+													<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d239315" data-id="d239315" data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-307f818 elementor-widget elementor-widget-image" data-id="307f818" data-element_type="widget" data-widget_type="image.default">
+																<div class="elementor-widget-container">
+																	<div class="elementor-image">
+																		<img width="1394" height="340" src="/static/assets/logo.png" class="attachment-full size-full" alt="" loading="lazy">	
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3114469" data-id="3114469" data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-9b33ae0 elementor-icon-list--layout-inline elementor-align-center elementor-mobile-align-center elementor-tablet-align-left elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="9b33ae0" data-element_type="widget" data-widget_type="icon-list.default">
+																<div class="elementor-widget-container">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0c80cf4" data-id="0c80cf4" data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-44d305a elementor-shape-circle e-grid-align-right e-grid-align-right e-grid-align-center elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="44d305a" data-element_type="widget" data-widget_type="social-icons.default">
+																<div class="elementor-widget-container">
+																	<div class="elementor-social-icons-wrapper elementor-grid">
+																		
+																		<div class="elementor-grid-item">
+																			
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- #page -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/static/assets/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+		<script type="text/javascript" src="/static/assets/i18n.min.js" id="wp-i18n-js"></script>
+		<script type="text/javascript" src="/static/assets/lodash.min.js" id="lodash-js"></script>
+		<script type="text/javascript" src="/static/assets/url.min.js" id="wp-url-js"></script>
+		<script type="text/javascript" src="/static/assets/hooks.min.js" id="wp-hooks-js"></script>
+
+		<script type="text/javascript" src="/static/assets/api-fetch.min.js" id="wp-api-fetch-js"></script>
+		<script type="text/javascript" src="/static/assets/index.js" id="contact-form-7-js"></script>
+		<script type="text/javascript" src="/static/assets/htm.js" id="htm-js"></script>
+		<script type="text/javascript" src="/static/assets/react.min.js" id="react-js"></script>
+		<script type="text/javascript" src="/static/assets/react-dom.min.js" id="react-dom-js"></script>
+		<script type="text/javascript" src="/static/assets/escape-html.min.js" id="wp-escape-html-js"></script>
+		<script type="text/javascript" src="/static/assets/element.min.js" id="wp-element-js"></script>
+		<script type="text/javascript" src="/static/assets/app.js" id="metform-app-js"></script>
+		<script type="text/javascript" src="/static/assets/frontend-script.js" id="elementskit-framework-js-frontend-js"></script>
+		<script type="text/javascript" src="/static/assets/widget-scripts.js" id="ekit-widget-scripts-js"></script>
+		<script type="text/javascript" src="/static/assets/wp-embed.min.js" id="wp-embed-js"></script>
+		<script type="text/javascript" src="/static/assets/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+		<script type="text/javascript" src="/static/assets/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+		<script type="text/javascript" src="/static/assets/core.min.js" id="jquery-ui-core-js"></script>
+		<script type="text/javascript" src="/static/assets/dialog.min.js" id="elementor-dialog-js"></script>
+		<script type="text/javascript" src="/static/assets/waypoints.min.js" id="elementor-waypoints-js"></script>
+		<script type="text/javascript" src="/static/assets/share-link.min.js" id="share-link-js"></script>
+		<script type="text/javascript" src="/static/assets/swiper.min.js" id="swiper-js"></script>
+		<script type="text/javascript" src="/static/assets/nav-menu.js" id="jkit-element-navmenu-js"></script>
+		<script type="text/javascript" src="/static/assets/animated-text.js" id="jkit-element-animatedtext-js"></script>
+		<script type="text/javascript" src="/static/assets/fun-fact.js" id="jkit-element-funfact-js"></script>
+		<script type="text/javascript" src="/static/assets/post-pagination.js" id="jkit-element-pagination-js"></script>
+		<script type="text/javascript" src="/static/assets/ResizeSensor.min.js" id="jet-resize-sensor-js"></script>
+		<script type="text/javascript" src="/static/assets/sticky-sidebar.min.js" id="jet-sticky-sidebar-js"></script>
+		<script type="text/javascript" src="/static/assets/jquery.jsticky.js" id="jsticky-js"></script>
+		<script type="text/javascript" src="/static/assets/jet-sticky-frontend.js" id="jet-sticky-frontend-js"></script>
+		<script type="text/javascript" src="/static/assets/slick.min.js" id="ekit-slick-js"></script>
+		<script type="text/javascript" src="/static/assets/elementor.js" id="elementskit-elementor-js"></script>
+		<script type="text/javascript" src="/static/assets/preloaded-elements-handlers.min.js" id="preloaded-elements-handlers-js"></script>
+		<script type="text/javascript" src="/static/assets/form-picker-editor.js" id="metform-js-formpicker-control-editor-js"></script>
+		<script type="text/javascript" src="/static/assets/widgetarea-editor.js" id="elementskit-js-widgetarea-control-editor-js"></script>
+	</body>
+</html>
