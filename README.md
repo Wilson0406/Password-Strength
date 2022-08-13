@@ -23,3 +23,6 @@ A password strength analysis system shows how resistant a given password might b
 
 ## Tech Stack:
 We conducted our project in a python 3.9 virtual environment. We used Python command line arguments to create the environment as it supports most of the skiKit libraries which are required in construction of the ML joblib files to be used by the web application. We used the sklearn library to get the models and the Flask container to construct the Web application. Additionally, we also used Enzoic’s Live database which consisted of various compromised credentials using the API key provided by the website to check for the occurrence of the passwords in public domains.
+
+## Future Work:
+* A page for generating strong passwords.
