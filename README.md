@@ -1,7 +1,7 @@
 # Password-Strength
 
 Password Strength Analysis Using Machine Learning Models <br>
-[LIVE](https://c4self.herokuapp.com/)
+[LIVE](https://c4self.onrender.com/)
 
 A password strength analysis system shows how resistant a given password might be to password cracking attempts like brute force and dictionary attacks.
 * We help the user to have a strong password which will help him/her to protect from vulnerability.
