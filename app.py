@@ -100,6 +100,7 @@ def mainpage():
     DecisionTree_Model = joblib.load('DecisionTree_Model.joblib')
     LogisticRegression_Model = joblib.load('LogisticRegression_Model.joblib')
     NaiveBayes_Model = joblib.load('NaiveBayes_Model.joblib')
+    RandomForest_Model = joblib.load('RandomForest_Model.joblib')
     NeuralNetwork_Model = joblib.load('NeuralNetwork_Model.joblib')
     
     Password = [enteredPassword]
@@ -108,6 +109,7 @@ def mainpage():
     DecisionTree_Test = DecisionTree_Model.predict(Password)
     LogisticRegression_Test = LogisticRegression_Model.predict(Password)
     NaiveBayes_Test = NaiveBayes_Model.predict(Password)
+    RandomForest_Test = RandomForest_Model.predict(Password)
     NeuralNetwork_Test = NeuralNetwork_Model.predict(Password)
     status, count = callEnzoicAPI(enteredPassword)
     score = scoreCalculate(enteredPassword)
@@ -115,6 +117,7 @@ def mainpage():
     return render_template("main.html", DecisionTree=DecisionTree_Test,
                                         LogReg=LogisticRegression_Test, 
                                         NaiveBayes=NaiveBayes_Test,
+                                        RandomForest=RandomForest_Test,
                                         NeuralNetwork=NeuralNetwork_Test,
                                         status=status,
                                         count=count,
